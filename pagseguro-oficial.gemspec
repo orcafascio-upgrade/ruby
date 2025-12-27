@@ -16,16 +16,15 @@ Gem::Specification.new do |spec|
   spec.test_files            = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths         = ["lib"]
 
-  spec.required_ruby_version = ">= 1.9.3"
+  spec.required_ruby_version = ">= 2.7.0"
 
   spec.add_runtime_dependency "aitch", "~> 0.2"
-  spec.add_runtime_dependency "nokogiri", "~> 1.6"
-  spec.add_runtime_dependency "i18n", "~> 0.7"
-  spec.add_runtime_dependency "json", "~> 1.8"
+  spec.add_runtime_dependency "nokogiri", "~> 1.13"
+  spec.add_runtime_dependency "i18n", "~> 1.8"
 
-  spec.add_development_dependency "bundler", "~> 1.7"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "fakeweb", "~> 1.3"
-  spec.add_development_dependency "activesupport", "~> 4.0"
+  spec.add_development_dependency "bundler", "~> 2.0"
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rspec", "~> 3.10"
+  spec.add_development_dependency "webmock", "~> 3.14"
+  spec.add_development_dependency "activesupport", "~> 6.0"
 end
